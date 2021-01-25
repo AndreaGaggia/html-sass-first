@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav.sass-lang {
+  padding: 30px;
   font-family: "Source Sans Pro", sans-serif;
   color: #003366;
   display: flex;
@@ -10,13 +17,27 @@ nav.sass-lang img {
 }
 nav.sass-lang .right-content {
   display: flex;
+  align-items: center;
 }
 nav.sass-lang .right-content ul {
   list-style: none;
   display: flex;
 }
-nav.sass-lang a {
+nav.sass-lang .right-content ul a {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+nav.sass-lang .right-content ul a:hover {
+  background: #dadbdf40;
+}
+nav.sass-lang .right-content input {
+  height: 34px;
+  display: block;
+  padding: 0.25rem 1rem;
+  margin-left: 1rem;
+  border: 1px solid #dadbdf;
+  font-size: 1rem;
 }

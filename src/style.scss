@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 $textColor: #003366;
 $gFont: "Source Sans Pro", sans-serif;
+$px: 1rem;
 
 nav.sass-lang {
+    padding: 30px;
     font-family: $gFont;
     color: $textColor;
     display: flex;
@@ -14,16 +22,31 @@ nav.sass-lang {
 
     .right-content {
         display: flex;
+        align-items: center;
 
         ul {
             list-style: none;
             display: flex;
-        }
-    }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-weight: 600;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: inherit;
+                font-weight: 600;
+                padding: 0.75rem $px;
+                &:hover {
+                    background: #dadbdf40;
+                }
+            }
+        }
+
+        input {
+            height: 34px;
+            display: block;
+            padding: 0.25rem $px;
+            margin-left: 1rem;
+            border: 1px solid #dadbdf;
+            font-size: 1rem;
+        }
     }
 }
