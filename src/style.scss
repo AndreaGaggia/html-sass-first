@@ -1,0 +1,29 @@
+$textColor: #003366;
+$gFont: "Source Sans Pro", sans-serif;
+
+nav.sass-lang {
+    font-family: $gFont;
+    color: $textColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 128px;
+    }
+
+    .right-content {
+        display: flex;
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+    }
+}

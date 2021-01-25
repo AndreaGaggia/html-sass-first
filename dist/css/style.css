@@ -1,0 +1,22 @@
+nav.sass-lang {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #003366;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.sass-lang img {
+  width: 128px;
+}
+nav.sass-lang .right-content {
+  display: flex;
+}
+nav.sass-lang .right-content ul {
+  list-style: none;
+  display: flex;
+}
+nav.sass-lang a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
